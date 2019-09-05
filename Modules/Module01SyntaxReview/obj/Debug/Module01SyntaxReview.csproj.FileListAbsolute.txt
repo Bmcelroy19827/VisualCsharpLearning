@@ -1,0 +1,7 @@
+C:\Users\bMcElroy\Desktop\C#20483\MyReview\Modules\Module01SyntaxReview\Module01SyntaxReview\obj\Debug\Module01SyntaxReview.csprojAssemblyReference.cache
+C:\Users\bMcElroy\Desktop\C#20483\MyReview\Modules\Module01SyntaxReview\Module01SyntaxReview\obj\Debug\Module01SyntaxReview.csproj.CoreCompileInputs.cache
+C:\Users\bMcElroy\Desktop\C#20483\MyReview\Modules\Module01SyntaxReview\Module01SyntaxReview\bin\Debug\Module01SyntaxReview.exe.config
+C:\Users\bMcElroy\Desktop\C#20483\MyReview\Modules\Module01SyntaxReview\Module01SyntaxReview\bin\Debug\Module01SyntaxReview.exe
+C:\Users\bMcElroy\Desktop\C#20483\MyReview\Modules\Module01SyntaxReview\Module01SyntaxReview\bin\Debug\Module01SyntaxReview.pdb
+C:\Users\bMcElroy\Desktop\C#20483\MyReview\Modules\Module01SyntaxReview\Module01SyntaxReview\obj\Debug\Module01SyntaxReview.exe
+C:\Users\bMcElroy\Desktop\C#20483\MyReview\Modules\Module01SyntaxReview\Module01SyntaxReview\obj\Debug\Module01SyntaxReview.pdb
