@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module01SyntaxReview", "Module01SyntaxReview\Module01SyntaxReview.csproj", "{792157F0-B6D9-4C09-AC3D-87C437BC7462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module02MethodsExceptionsAndMonitoring", "Module02MethodsExceptionsAndMonitoring\Module02MethodsExceptionsAndMonitoring.csproj", "{D7BD41A0-3D34-435E-9FA4-3B8258B2BD4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{792157F0-B6D9-4C09-AC3D-87C437BC7462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792157F0-B6D9-4C09-AC3D-87C437BC7462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792157F0-B6D9-4C09-AC3D-87C437BC7462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792157F0-B6D9-4C09-AC3D-87C437BC7462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BD41A0-3D34-435E-9FA4-3B8258B2BD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BD41A0-3D34-435E-9FA4-3B8258B2BD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BD41A0-3D34-435E-9FA4-3B8258B2BD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BD41A0-3D34-435E-9FA4-3B8258B2BD4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BCECAF8-0B15-44EF-83D6-CA5F89CC8735}
+	EndGlobalSection
+EndGlobal

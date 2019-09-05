@@ -1,0 +1,96 @@
+﻿<Window x:Class="Module01VisualCsSyntaxReview.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module01VisualCsSyntaxReview"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="Auto" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="150" Margin="120,91,0,0" VerticalAlignment="Top" Width="150px">
+            <StackPanel Height="164" RenderTransformOrigin="0.738,0.489" HorizontalAlignment="Left" Width="150">
+                <TextBox x:Name="TboRegularExpression" HorizontalAlignment="Left" Height="Auto" Margin="0,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150px" RenderTransformOrigin="0.498,-0.287"/>
+                <TextBox x:Name="TboStringToTest" HorizontalAlignment="Left" Height="23" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150px" RenderTransformOrigin="0.5,0.5"/>
+                <Button x:Name="BtnCheckExpression" Content="Check Expression" Click="BtnCheckExpression_Click" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="150px" RenderTransformOrigin="0.263,-0.14"/>
+                <Label x:Name="LblExpressionResult" Content="Result Here" VerticalAlignment="Bottom" Width="150px" />
+            </StackPanel>
+        </StackPanel>
+        <Grid HorizontalAlignment="Left" Height="Auto" Margin="311,45,0,0" VerticalAlignment="Top" Width="Auto">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="0" Grid.Column="0">^</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow"  Grid.Row="0" Grid.Column="1" >Denote The beginning of a Regular expression</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow"  Grid.Row="1" Grid.Column="0" >$</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="1" Grid.Column="1">Denote the end of a regular expression or ending of a line</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow"  Grid.Row="2" Grid.Column="0" >[]</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="2" Grid.Column="1" >check for any single character in the character set specified in []</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="3" Grid.Column="0" >()</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="3" Grid.Column="1" >Check for a string. Create and store variables</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="4" Grid.Column="0" >?</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="4" Grid.Column="1" >Check for zero or one occurrence of the preceding character</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="5" Grid.Column="0" >+</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow"  Grid.Row="5" Grid.Column="1">Check for one or more occurrence of the of the preceding character</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="6" Grid.Column="0" >*</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="6" Grid.Column="1" >Check for any number of occurrences(including zero) of the preceding character.</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="7" Grid.Column="0" >.</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="7" Grid.Column="1" >Check for a single character which is not the ending of a line</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="8" Grid.Column="0" >|</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="8" Grid.Column="1" >Logical OR</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="9" Grid.Column="0" >\</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="9" Grid.Column="1" >Escape from the normal way a subsequent character is interpreted</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="10" Grid.Column="0" >!</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="10" Grid.Column="1" >Logical NOT</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" x:Name="LblFrenchBrackets" Grid.Row="11" Grid.Column="0" >{}</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow"  Grid.Row="11" Grid.Column="1" >Repeat preceding character. {n}: n times, {min,}: min times or more, {min,max} at least min but no more than max</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="12" Grid.Column="0" >[^]</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="12" Grid.Column="1" >Negative Character Group([^A] means match anything except an A)</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="13" Grid.Column="0" >\p{unicode category/block</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="13" Grid.Column="1" >Match any character that belongs to the specified Unicode category or block (\P is Negative)</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="14" Grid.Column="0" >\b</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="14" Grid.Column="1" >Word boundary</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="15" Grid.Column="0" >\s</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="15" Grid.Column="1" >White-space character (Negative is \S</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="16" Grid.Column="0" >\w</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="16" Grid.Column="1" >Matches any word characters (Negative is \W)</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="17" Grid.Column="0" >\d</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="17" Grid.Column="1" >Matches any decimal digit (Negative is \D)</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="18" Grid.Column="0" >[base_group - [excluded_group]]</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="18" Grid.Column="1" >Character class Subtraction. [a-z -[djp]] is every letter a-z except d,j, and p</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="19" Grid.Column="0" >(\1)</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="19" Grid.Column="1" >Match the string in the first captured group.  @"(\w+)\s(\1) - (\w+) is first group which capture all word character and then there's the whitespace, \s, and then (\1) captures the match found with the first (\w)</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="20" Grid.Column="0" >(?'name'subexpression)</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="20" Grid.Column="1" >Names Match Subexpressions</TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="21" Grid.Column="0" ></TextBlock>
+            <TextBlock TextWrapping="WrapWithOverflow" Grid.Row="21" Grid.Column="1" ></TextBlock>
+        </Grid>
+        <Label  HorizontalAlignment="Left" Margin="0,91,0,0" VerticalAlignment="Top" Width="120" Content="Regular Expression" Height="27"/>
+        <Label Content="Test String"  HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="105"/>
+
+    </Grid>
+</Window>
